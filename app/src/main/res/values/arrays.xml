@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name="image_ids">
+
+        <item>@drawable/home</item>
+        <item>@drawable/rate</item>
+        <item>@drawable/watch</item>
+        <item>@drawable/search</item>
+        <item>@drawable/news</item>
+        <item>@drawable/user2</item>
+    </string-array>
+
+</resources>
+
+    <!--Bitmap one = BitmapFactory.decodeResource(this.getResources(), R.drawable.home);-->
+    <!--Bitmap two = BitmapFactory.decodeResource(this.getResources(), R.drawable.rate);-->
+    <!--Bitmap three = BitmapFactory.decodeResource(this.getResources(), R.drawable.watch);-->
+    <!--Bitmap four = BitmapFactory.decodeResource(this.getResources(), R.drawable.search);-->
+    <!--Bitmap five = BitmapFactory.decodeResource(this.getResources(), R.drawable.news);-->
+    <!--Bitmap six = BitmapFactory.decodeResource(this.getResources(), R.drawable.user);-->
