@@ -14,13 +14,13 @@ import java.util.ArrayList;
 /**
  * Created by bulbulkhan on 10/25/2015.
  */
-public class GridViewAdapter extends ArrayAdapter<ImageItem> {
+public class GridViewAdapter extends ArrayAdapter<Gridview_ImageItem> {
     private Context context;
     private int layoutResourceId;
-    private ArrayList<ImageItem> data = new ArrayList<ImageItem>();
+    private ArrayList<Gridview_ImageItem> data = new ArrayList<Gridview_ImageItem>();
 
     public GridViewAdapter(Context context, int layoutResourceId,
-                           ArrayList<ImageItem> data) {
+                           ArrayList<Gridview_ImageItem> data) {
         super(context, layoutResourceId, data);
         this.layoutResourceId = layoutResourceId;
         this.context = context;
@@ -43,7 +43,7 @@ public class GridViewAdapter extends ArrayAdapter<ImageItem> {
             holder = (ViewHolder) row.getTag();
         }
 
-        ImageItem item = data.get(position);
+        Gridview_ImageItem item = data.get(position);
         holder.imageTitle.setText(item.getTitle());
         holder.image.setImageBitmap(item.getImage());
         return row;

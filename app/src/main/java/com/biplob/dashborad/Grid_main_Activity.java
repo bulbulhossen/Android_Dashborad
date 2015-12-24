@@ -10,16 +10,16 @@ import android.widget.GridView;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class Grid_main_Activity extends AppCompatActivity {
 
     private GridView gridView;
     private GridViewAdapter customGridAdapter;
-    ArrayList<ImageItem> imageItems = new ArrayList<ImageItem>();
+    ArrayList<Gridview_ImageItem> imageItems = new ArrayList<Gridview_ImageItem>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.grid_layout);
 
 
         //Set Grid View Item
@@ -31,12 +31,12 @@ public class MainActivity extends AppCompatActivity {
         Bitmap five = BitmapFactory.decodeResource(this.getResources(), R.drawable.news);
         Bitmap six = BitmapFactory.decodeResource(this.getResources(), R.drawable.user2);
 
-        imageItems.add(new ImageItem(one, "Current Market"));
-        imageItems.add(new ImageItem(two, "Market Ratting"));
-        imageItems.add(new ImageItem(three, "Watch List"));
-        imageItems.add(new ImageItem(four, "Search Compnay"));
-        imageItems.add(new ImageItem(five, "Market News"));
-        imageItems.add(new ImageItem(six, "User Setting"));
+        imageItems.add(new Gridview_ImageItem(one, "Current Market"));
+        imageItems.add(new Gridview_ImageItem(two, "Market Ratting"));
+        imageItems.add(new Gridview_ImageItem(three, "Watch List"));
+        imageItems.add(new Gridview_ImageItem(four, "Search Compnay"));
+        imageItems.add(new Gridview_ImageItem(five, "Market News"));
+        imageItems.add(new Gridview_ImageItem(six, "User Setting"));
 
         gridView = (GridView) findViewById(R.id.gridView);
         customGridAdapter = new GridViewAdapter(this, R.layout.row_grid, imageItems);
